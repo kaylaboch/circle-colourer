@@ -1,13 +1,9 @@
 var $html = $('html');
-var $body = $('body');
+var $ball = $('.ball');
+var $pick = $('form');
+var $input = $('$pick');
 
-$html.on('keydown', function (e) {
-  var div = $('<div>');
-
-  $body.append(div);
-  div.addClass('ball');
-  $('form').on('input', function (e){
-
-  e.preventDefault();
-  }
+$pick.on('change', function () {
+  console.log('works');
+  $ball.css('background-color', $input.val());
 });
